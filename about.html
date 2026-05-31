@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — Byron.Verona</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --blue: #1515CC;
+      --white: #ffffff;
+    }
+
+    body {
+      background: var(--white);
+      color: var(--blue);
+      font-family: 'VT323', monospace;
+      font-size: 18px;
+    }
+
+    a { color: var(--blue); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    header {
+      border-bottom: 2px solid var(--blue);
+      padding: 14px 24px;
+      display: flex;
+      align-items: baseline;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .site-title { font-size: 34px; letter-spacing: 0.04em; }
+    .site-sub   { font-size: 16px; opacity: 0.6; }
+    header nav  { margin-left: auto; display: flex; gap: 20px; font-size: 17px; }
+
+    main {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 40px 24px;
+    }
+
+    h1 { font-size: 30px; margin-bottom: 28px; letter-spacing: 0.02em; }
+
+    .dither-bar {
+      height: 12px;
+      background-image: radial-gradient(var(--blue) 1.2px, transparent 1.2px);
+      background-size: 5px 5px;
+      margin: 32px 0;
+    }
+
+    p {
+      font-size: 20px;
+      line-height: 1.9;
+      margin-bottom: 20px;
+    }
+
+    .influences {
+      border: 2px solid var(--blue);
+      margin-top: 32px;
+    }
+    .influences-title {
+      font-size: 20px;
+      padding: 10px 16px;
+      border-bottom: 2px solid var(--blue);
+      letter-spacing: 0.04em;
+    }
+    .influence-row {
+      display: flex;
+      align-items: baseline;
+      gap: 16px;
+      padding: 10px 16px;
+      border-bottom: 1px solid var(--blue);
+      font-size: 19px;
+      line-height: 1.7;
+    }
+    .influence-row:last-child { border-bottom: none; }
+    .influence-name { min-width: 180px; font-size: 20px; }
+    .influence-note { opacity: 0.7; font-size: 17px; }
+
+    footer {
+      border-top: 2px solid var(--blue);
+      padding: 16px 24px;
+      font-size: 15px;
+      line-height: 2.4;
+      opacity: 0.7;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <a href="index.html" class="site-title">Byron.Verona</a>
+  <span class="site-sub">a daily webcomic</span>
+  <nav>
+    <a href="index.html#archive">Archive</a>
+    <a href="about.html">About</a>
+    <a href="feed.html">Feed</a>
+  </nav>
+</header>
+
+<main>
+  <h1>About</h1>
+
+  <p>
+    Just a guy trying to emulate Peanuts comic, Walt Kelly's Pogo comic and
+    especially Calvin and Hobbes.
+  </p>
+
+  <p>
+    Updated twice a day. Blue ink. Dithered dreams.
+  </p>
+
+  <div class="dither-bar"></div>
+
+  <div class="influences">
+    <div class="influences-title">Influences</div>
+    <div class="influence-row">
+      <span class="influence-name">Peanuts</span>
+      <span class="influence-note">Charles M. Schulz — the quiet melancholy between the laughs.</span>
+    </div>
+    <div class="influence-row">
+      <span class="influence-name">Pogo</span>
+      <span class="influence-note">Walt Kelly — language as a living, breathing, ridiculous thing.</span>
+    </div>
+    <div class="influence-row">
+      <span class="influence-name">Calvin and Hobbes</span>
+      <span class="influence-note">Bill Watterson — the one that started all of this.</span>
+    </div>
+  </div>
+</main>
+
+<footer>
+  Byron.Verona — updated twice daily. Blue ink. Dithered dreams.<br>
+  <a href="feed.html">RSS Feed</a> &nbsp;·&nbsp;
+  <a href="about.html">About</a> &nbsp;·&nbsp;
+  Licensed under <a href="https://creativecommons.org/licenses/by-nc/2.5/" target="_blank">CC BY-NC 2.5</a>
+</footer>
+
+</body>
+</html>

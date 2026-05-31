@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Byron.Verona</title>
+  <meta name="description" content="Byron.Verona — a daily webcomic." />
+
+  <!-- Comic data — edit this file to add new comics -->
+  <script src="comics.js"></script>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --blue: #1515CC;
+      --white: #ffffff;
+    }
+
+    body {
+      background: var(--white);
+      color: var(--blue);
+      font-family: 'VT323', monospace;
+      font-size: 18px;
+    }
+
+    a { color: var(--blue); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* ── HEADER ── */
+    header {
+      border-bottom: 2px solid var(--blue);
+      padding: 14px 24px;
+      display: flex;
+      align-items: baseline;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .site-title { font-size: 34px; letter-spacing: 0.04em; }
+    .site-sub   { font-size: 16px; opacity: 0.6; }
+    header nav  { margin-left: auto; display: flex; gap: 20px; font-size: 17px; }
+
+    /* ── MAIN CONTENT ── */
+    main {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 28px 24px;
+    }
+
+    /* ── COMIC TITLE ── */
+    #comicTitle { font-size: 30px; margin-bottom: 16px; letter-spacing: 0.02em; }
+
+    /* ── COMIC IMAGE FRAME ── */
+    .comic-frame {
+      border: 2px solid var(--blue);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 200px;
+      position: relative;
+      overflow: hidden;
+      background: var(--white);
+    }
+    .comic-frame img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+    /* Alt/flavor text tooltip — appears on hover like xkcd */
+    .alt-tooltip {
+      display: none;
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      background: var(--blue);
+      color: var(--white);
+      font-size: 16px;
+      padding: 8px 12px;
+      line-height: 1.5;
+    }
+    .comic-frame:hover .alt-tooltip { display: block; }
+
+    /* ── NAVIGATION ── */
+    .nav-strip {
+      display: flex;
+      margin-top: 16px;
+      border: 2px solid var(--blue);
+      width: fit-content;
+    }
+    .nav-strip button {
+      font-family: 'VT323', monospace;
+      font-size: 18px;
+      background: none;
+      border: none;
+      border-right: 2px solid var(--blue);
+      color: var(--blue);
+      padding: 7px 18px;
+      cursor: pointer;
+    }
+    .nav-strip button:last-child { border-right: none; }
+    .nav-strip button:hover     { background: var(--blue); color: var(--white); }
+    .nav-strip button:disabled  { opacity: 0.3; cursor: default; }
+    .nav-strip button:disabled:hover { background: none; color: var(--blue); }
+
+    /* ── META LINKS ── */
+    .meta {
+      margin-top: 16px;
+      font-size: 16px;
+      line-height: 2.2;
+      opacity: 0.72;
+    }
+    .meta a { opacity: 1; }
+
+    /* ── DITHER DIVIDER ── */
+    .dither-bar {
+      height: 12px;
+      background-image: radial-gradient(var(--blue) 1.2px, transparent 1.2px);
+      background-size: 5px 5px;
+      margin: 32px 0;
+    }
+
+    /* ── ARCHIVE ── */
+    .archive-title { font-size: 26px; margin-bottom: 12px; }
+    .archive-grid  { border: 2px solid var(--blue); }
+    .archive-row {
+      display: flex;
+      align-items: baseline;
+      gap: 16px;
+      padding: 7px 14px;
+      border-bottom: 1px solid var(--blue);
+      cursor: pointer;
+      font-size: 18px;
+    }
+    .archive-row:last-child { border-bottom: none; }
+    .archive-row:hover { background: var(--blue); color: var(--white); }
+    .archive-row:hover a { color: var(--white); }
+    .archive-num  { width: 52px; opacity: 0.5; font-size: 16px; flex-shrink: 0; }
+    .archive-date { width: 110px; opacity: 0.6; font-size: 15px; flex-shrink: 0; }
+
+    /* ── FOOTER ── */
+    footer {
+      border-top: 2px solid var(--blue);
+      padding: 16px 24px;
+      font-size: 15px;
+      line-height: 2.4;
+      opacity: 0.7;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <span class="site-title">Byron.Verona</span>
+  <span class="site-sub">a daily webcomic</span>
+  <nav>
+    <a href="#archive">Archive</a>
+    <a href="about.html">About</a>
+    <a href="feed.html">Feed</a>
+  </nav>
+</header>
+
+<main>
+
+  <!-- COMIC TITLE -->
+  <div id="comicTitle"></div>
+
+  <!-- COMIC IMAGE -->
+  <div class="comic-frame" id="comicFrame">
+    <img id="comicImg" src="" alt="" />
+    <div class="alt-tooltip" id="altTooltip"></div>
+  </div>
+
+  <!-- NAVIGATION: |< Prev · Random · Next · >| -->
+  <div class="nav-strip">
+    <button id="btnFirst"  title="First comic">|&lt;</button>
+    <button id="btnPrev"   title="Previous comic">&lt; Prev</button>
+    <button id="btnRandom" title="Random comic">Random</button>
+    <button id="btnNext"   title="Next comic">Next &gt;</button>
+    <button id="btnLast"   title="Latest comic">&gt;|</button>
+  </div>
+
+  <!-- PERMANENT LINK + IMAGE URL (like xkcd) -->
+  <div class="meta" id="comicMeta"></div>
+
+  <div class="dither-bar"></div>
+
+  <!-- ARCHIVE -->
+  <div id="archive">
+    <div class="archive-title">Archive</div>
+    <div class="archive-grid" id="archiveGrid"></div>
+  </div>
+
+</main>
+
+<footer>
+  Byron.Verona — updated twice daily. Blue ink. Dithered dreams.<br>
+  <a href="feed.html">RSS Feed</a> &nbsp;·&nbsp;
+  <a href="about.html">About</a> &nbsp;·&nbsp;
+  Licensed under <a href="https://creativecommons.org/licenses/by-nc/2.5/" target="_blank">CC BY-NC 2.5</a>
+</footer>
+
+<script>
+// ── SORT: newest first (highest id = index 0) ───────────────────────────────
+// COMICS is loaded from comics.js — it's already newest-first, but we sort
+// defensively so order in the file doesn't matter.
+const sorted = [...COMICS].sort((a, b) => b.id - a.id);
+
+// current index into `sorted` (0 = latest)
+let current = 0;
+
+// ── RENDER ──────────────────────────────────────────────────────────────────
+function render() {
+  const c = sorted[current];
+
+  // Title
+  document.title = `Byron.Verona — ${c.title}`;
+  document.getElementById('comicTitle').textContent = c.title;
+
+  // Image + alt tooltip
+  const img = document.getElementById('comicImg');
+  img.src = c.image;
+  img.alt = c.title;
+  document.getElementById('altTooltip').textContent = c.alt;
+  document.getElementById('comicFrame').title = c.alt;
+
+  // Meta links
+  const slug = c.title.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+  document.getElementById('comicMeta').innerHTML =
+    `Permanent link to this comic: <a href="?id=${c.id}">#${c.id} — ${c.title}</a><br>` +
+    `Image URL: <a href="${c.image}" target="_blank">${c.image}</a>`;
+
+  // Button states
+  document.getElementById('btnFirst').disabled  = current === sorted.length - 1;
+  document.getElementById('btnPrev').disabled   = current === sorted.length - 1;
+  document.getElementById('btnNext').disabled   = current === 0;
+  document.getElementById('btnLast').disabled   = current === 0;
+
+  // Rebuild archive highlight
+  buildArchive();
+
+  // Update URL without reloading (so links are shareable)
+  history.replaceState(null, '', `?id=${c.id}`);
+}
+
+// ── ARCHIVE ─────────────────────────────────────────────────────────────────
+function buildArchive() {
+  const grid = document.getElementById('archiveGrid');
+  grid.innerHTML = '';
+  sorted.forEach((c, i) => {
+    const row = document.createElement('div');
+    row.className = 'archive-row';
+    if (i === current) row.style.background = 'var(--blue)';
+    if (i === current) row.style.color = 'var(--white)';
+    row.innerHTML =
+      `<span class="archive-num">#${String(c.id).padStart(3, '0')}</span>` +
+      `<span class="archive-date">${c.date}</span>` +
+      `<span>${c.title}</span>`;
+    row.addEventListener('click', () => {
+      current = i;
+      render();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+    grid.appendChild(row);
+  });
+}
+
+// ── NAV BUTTONS ─────────────────────────────────────────────────────────────
+document.getElementById('btnFirst').addEventListener('click', () => {
+  current = sorted.length - 1; render();
+});
+document.getElementById('btnPrev').addEventListener('click', () => {
+  if (current < sorted.length - 1) { current++; render(); }
+});
+document.getElementById('btnNext').addEventListener('click', () => {
+  if (current > 0) { current--; render(); }
+});
+document.getElementById('btnLast').addEventListener('click', () => {
+  current = 0; render();
+});
+document.getElementById('btnRandom').addEventListener('click', () => {
+  current = Math.floor(Math.random() * sorted.length); render();
+});
+
+// ── DEEP LINK via ?id=N ─────────────────────────────────────────────────────
+// If someone visits ?id=3 they land directly on that comic.
+(function () {
+  const params = new URLSearchParams(window.location.search);
+  const id = parseInt(params.get('id'), 10);
+  if (!isNaN(id)) {
+    const idx = sorted.findIndex(c => c.id === id);
+    if (idx !== -1) current = idx;
+  }
+  render();
+})();
+</script>
+
+</body>
+</html>
