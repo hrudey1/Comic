@@ -138,6 +138,61 @@
     .archive-num  { width: 52px; opacity: 0.5; font-size: 16px; flex-shrink: 0; }
     .archive-date { width: 110px; opacity: 0.6; font-size: 15px; flex-shrink: 0; }
 
+    /* ── SHARE STRIP ── */
+    .share-strip {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0;
+      margin-top: 12px;
+      border: 2px solid var(--blue);
+      width: fit-content;
+      font-size: 15px;
+    }
+    .share-btn {
+      font-family: 'VT323', monospace;
+      font-size: 15px;
+      background: none;
+      border: none;
+      border-right: 2px solid var(--blue);
+      color: var(--blue);
+      padding: 5px 13px;
+      cursor: pointer;
+      white-space: nowrap;
+      text-decoration: none;
+      display: inline-block;
+      line-height: 1.8;
+    }
+    .share-btn:last-child { border-right: none; }
+    .share-btn:hover { background: var(--blue); color: var(--white); text-decoration: none; }
+    .share-btn.copied { background: var(--blue); color: var(--white); }
+    .share-label {
+      font-size: 14px;
+      opacity: 0.55;
+      margin-top: 5px;
+      margin-bottom: 2px;
+    }
+
+    /* ── MUSIC PLAYER ── */
+    #musicBtn {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      z-index: 999;
+      font-family: 'VT323', monospace;
+      font-size: 16px;
+      background: var(--white);
+      color: var(--blue);
+      border: 2px solid var(--blue);
+      padding: 8px 14px;
+      cursor: pointer;
+      line-height: 1.4;
+      text-align: center;
+      min-width: 90px;
+      box-shadow: 3px 3px 0 var(--blue);
+    }
+    #musicBtn:hover { background: var(--blue); color: var(--white); }
+    #musicBtn.playing { background: var(--blue); color: var(--white); }
+
     /* ── FOOTER ── */
     footer {
       border-top: 2px solid var(--blue);
@@ -179,6 +234,18 @@
     <button id="btnRandom" title="Random comic">Random</button>
     <button id="btnNext"   title="Next comic">Next &gt;</button>
     <button id="btnLast"   title="Latest comic">&gt;|</button>
+  </div>
+
+  <!-- SHARE STRIP -->
+  <div class="share-label">Share this comic:</div>
+  <div class="share-strip" id="shareStrip">
+    <button class="share-btn" id="shareCopy">⎘ Copy Link</button>
+    <a  class="share-btn" id="shareTwitter" target="_blank" rel="noopener">𝕏 Twitter</a>
+    <a  class="share-btn" id="shareBluesky" target="_blank" rel="noopener">🦋 Bluesky</a>
+    <a  class="share-btn" id="shareTumblr"  target="_blank" rel="noopener">t Tumblr</a>
+    <a  class="share-btn" id="shareReddit"  target="_blank" rel="noopener">r/ Reddit</a>
+    <button class="share-btn" id="shareIG">📷 Instagram*</button>
+    <button class="share-btn" id="shareTT">♪ TikTok*</button>
   </div>
 
   <!-- PERMANENT LINK + IMAGE URL (like xkcd) -->
@@ -240,6 +307,9 @@ function render() {
   // Rebuild archive highlight
   buildArchive();
 
+  // Update share links for this comic
+  updateShareLinks();
+
   // Update URL without reloading (so links are shareable)
   history.replaceState(null, '', `?id=${c.id}`);
 }
@@ -283,7 +353,78 @@ document.getElementById('btnRandom').addEventListener('click', () => {
   current = Math.floor(Math.random() * sorted.length); render();
 });
 
-// ── DEEP LINK via ?id=N ─────────────────────────────────────────────────────
+// ── SHARE ────────────────────────────────────────────────────────────────────
+function getShareURL() {
+  return window.location.origin + window.location.pathname + '?id=' + sorted[current].id;
+}
+function getShareText() {
+  return `"${sorted[current].title}" — Byron.Verona webcomic`;
+}
+
+// Copy link (also used for Instagram & TikTok fallback)
+function copyLink(btn) {
+  navigator.clipboard.writeText(getShareURL()).then(() => {
+    const orig = btn.textContent;
+    btn.textContent = '✓ Copied!';
+    btn.classList.add('copied');
+    setTimeout(() => { btn.textContent = orig; btn.classList.remove('copied'); }, 1800);
+  });
+}
+
+document.getElementById('shareCopy').addEventListener('click', function () {
+  copyLink(this);
+});
+
+document.getElementById('shareIG').addEventListener('click', function () {
+  copyLink(this);
+  // brief label change to explain
+  setTimeout(() => { this.textContent = '📷 Instagram*'; }, 1800);
+  this.textContent = '✓ Copied — paste into IG!';
+});
+
+document.getElementById('shareTT').addEventListener('click', function () {
+  copyLink(this);
+  setTimeout(() => { this.textContent = '♪ TikTok*'; }, 1800);
+  this.textContent = '✓ Copied — paste into TikTok!';
+});
+
+// Update all share links when comic changes — called inside render()
+function updateShareLinks() {
+  const url  = encodeURIComponent(getShareURL());
+  const text = encodeURIComponent(getShareText());
+  const title = encodeURIComponent(sorted[current].title);
+
+  document.getElementById('shareTwitter').href =
+    `https://twitter.com/intent/tweet?url=${url}&text=${text}`;
+
+  document.getElementById('shareBluesky').href =
+    `https://bsky.app/intent/compose?text=${text}%20${url}`;
+
+  document.getElementById('shareTumblr').href =
+    `https://www.tumblr.com/share/link?url=${url}&name=${title}`;
+
+  document.getElementById('shareReddit').href =
+    `https://www.reddit.com/submit?url=${url}&title=${text}`;
+}
+
+// ── MUSIC ────────────────────────────────────────────────────────────────────
+const audio    = document.getElementById('bgAudio');
+const musicBtn = document.getElementById('musicBtn');
+let   playing  = false;
+
+musicBtn.addEventListener('click', () => {
+  if (playing) {
+    audio.pause();
+    musicBtn.textContent = '▶ Music';
+    musicBtn.classList.remove('playing');
+    playing = false;
+  } else {
+    audio.play();
+    musicBtn.textContent = '⏸ Music';
+    musicBtn.classList.add('playing');
+    playing = true;
+  }
+});
 // If someone visits ?id=3 they land directly on that comic.
 (function () {
   const params = new URLSearchParams(window.location.search);
@@ -296,5 +437,12 @@ document.getElementById('btnRandom').addEventListener('click', () => {
 })();
 </script>
 
+<!-- BACKGROUND MUSIC -->
+<audio id="bgAudio" src="Narutos_Daily_Life.mp3" loop preload="none"></audio>
+
+<!-- STICKY MUSIC BUTTON -->
+<button id="musicBtn" title="Toggle background music">▶ Music</button>
+
 </body>
 </html>
+
