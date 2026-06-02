@@ -242,10 +242,10 @@
     <button class="share-btn" id="shareCopy">⎘ Copy Link</button>
     <a  class="share-btn" id="shareTwitter" target="_blank" rel="noopener">𝕏 Twitter</a>
     <a  class="share-btn" id="shareBluesky" target="_blank" rel="noopener">🦋 Bluesky</a>
-    <a  class="share-btn" id="shareTumblr"  target="_blank" rel="noopener">t Tumblr</a>
-    <a  class="share-btn" id="shareReddit"  target="_blank" rel="noopener">r/ Reddit</a>
-    <button class="share-btn" id="shareIG">📷 Instagram (No URL Sharing Only Link)*</button>
-    <button class="share-btn" id="shareTT">♪ TikTok (No URL Sharing Only Link)*</button>
+    <a  class="share-btn" id="shareTumblr"  target="_blank" rel="noopener">Tumblr</a>
+    <a  class="share-btn" id="shareReddit"  target="_blank" rel="noopener">Reddit</a>
+    <button class="share-btn" id="shareIG">📷 Instagram*</button>
+    <button class="share-btn" id="shareTT">♪ TikTok*</button>
   </div>
 
   <!-- PERMANENT LINK + IMAGE URL (like xkcd) -->
@@ -412,6 +412,10 @@ const audio    = document.getElementById('bgAudio');
 const musicBtn = document.getElementById('musicBtn');
 let   playing  = false;
 
+// Build path relative to wherever index.html lives — works on GitHub Pages subfolders
+const mp3Path = window.location.pathname.replace(/\/[^/]*$/, '/') + 'Narutos_Daily_Life.mp3';
+audio.src = mp3Path;
+
 musicBtn.addEventListener('click', () => {
   if (playing) {
     audio.pause();
@@ -419,11 +423,28 @@ musicBtn.addEventListener('click', () => {
     musicBtn.classList.remove('playing');
     playing = false;
   } else {
-    audio.play();
-    musicBtn.textContent = '⏸ Music';
-    musicBtn.classList.add('playing');
-    playing = true;
+    const playPromise = audio.play();
+    if (playPromise !== undefined) {
+      playPromise.then(() => {
+        musicBtn.textContent = '⏸ Music';
+        musicBtn.classList.add('playing');
+        playing = true;
+      }).catch(() => {
+        musicBtn.textContent = '✗ No audio file';
+      });
+    }
   }
+});
+
+// If audio ends unexpectedly (shouldn't since loop=true, but just in case)
+audio.addEventListener('ended', () => {
+  audio.play();
+});
+
+// Reset button if audio errors (e.g. file not found)
+audio.addEventListener('error', () => {
+  musicBtn.textContent = '✗ File not found';
+  playing = false;
 });
 // If someone visits ?id=3 they land directly on that comic.
 (function () {
@@ -438,11 +459,12 @@ musicBtn.addEventListener('click', () => {
 </script>
 
 <!-- BACKGROUND MUSIC -->
-<audio id="bgAudio" src="Narutos_Daily_Life.mp3" loop preload="none"></audio>
+<audio id="bgAudio" loop preload="auto"></audio>
 
 <!-- STICKY MUSIC BUTTON -->
 <button id="musicBtn" title="Toggle background music">▶ Music</button>
 
 </body>
 </html>
+
 
