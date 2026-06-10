@@ -16,7 +16,7 @@ const COMICS = [
     id: 3,
     title: "Lone Luminary Lingers Lonesomely",
     date: "2026-06-09",
-    alt: "Ironically, it takes a true lone genius to admit their lonely",
+    alt: "Ironically, it takes a true lone genius to admit they're lonely",
     image: "comics/003-lone-luminary-lingers-lonesomely.png"
   },
   {
