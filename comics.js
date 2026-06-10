@@ -13,38 +13,24 @@
 
 const COMICS = [
   {
-    id: 5,
-    title: "Computers",
-    date: "2025-01-10",
-    alt: "Why are computers the way that they are.",
-    image: "comics/005-computers.png"
-  },
-  {
-    id: 4,
-    title: "Rain",
-    date: "2025-01-10",
-    alt: "You brought an umbrella today. It didn't rain. You did not bring it yesterday night.",
-    image: "comics/004-rain.png"
-  },
-  {
     id: 3,
-    title: "The Notification",
-    date: "2025-01-09",
-    alt: "You opened the app. Now there are seventeen more notifications. Congratulations.",
-    image: "comics/003-the-notification.png"
+    title: "Lone Luminary Lingers Lonesomely",
+    date: "2026-06-09",
+    alt: "Ironically, it takes a true lone genius to admit their lonely",
+    image: "comics/003-lone-luminary-lingers-lonesomely.png"
   },
   {
     id: 2,
-    title: "The Queue",
-    date: "2025-01-07",
-    alt: "The second person always acts like they were there first. They were not.",
-    image: "comics/002-the-queue.png"
+    title: "Piece of Peace",
+    date: "2025-06-08",
+    alt: "The phone, quicker than a lobotomy and way cheaper",
+    image: "comics/002-piece-of-peace.png"
   },
   {
     id: 1,
-    title: "Monday",
-    date: "2025-01-06",
-    alt: "Every week starts with a Monday. The universe has always been against us.",
-    image: "comics/001-monday.png"
+    title: "Start of Something Great",
+    date: "2026-06-07",
+    alt: "Time to check back in 1 year if things changed for the better",
+    image: "comics/001-start-of-something-great.png"
   },
 ];
