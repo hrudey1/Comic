@@ -12,6 +12,27 @@
 // ============================================================
 
 const COMICS = [
+     {
+    id: 6,
+    title: "Mirror Mirror on the Wall",
+    date: "2026-06-12",
+    alt: "Sadly this isn't Snow White, a Mirror of Matsuyama, Lady of Shalott and Bloody Mary ",
+    image: "comics/006-mirror-mirror-on-the-wall.png"
+  },
+  {
+    id: 5,
+    title: "Cloud Nine",
+    date: "2026-06-11",
+    alt: "I guess you can't be on cloud nine forever, things eventually go back to normal",
+    image: "comics/005-cloud-nine.png"
+  },
+  {
+    id: 4,
+    title: "We Will Rock You",
+    date: "2026-06-10",
+    alt: "Birds of a feather, hurt people together",
+    image: "comics/004-we-will-rock-you.png"
+  },
   {
     id: 3,
     title: "Lone Luminary Lingers Lonesomely",
