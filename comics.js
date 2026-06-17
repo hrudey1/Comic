@@ -12,12 +12,40 @@
 // ============================================================
 
 const COMICS = [
-     {
+  {
+    id: 10,
+    title: "Trees a Crowd",
+    date: "2026-06-16",
+    alt: "This is how lumberjacks are created",
+    image: "comics/010-trees-a-crowd.png"
+  },
+  {
+    id: 9,
+    title: "Serene Star Sounds of Silence",
+    date: "2026-06-15",
+    alt: "I wonder if Simon and Garfunkel went stargazing for inspiration ",
+    image: "comics/009-serene-silence-of-stars.png"
+  },
+  {
+    id: 8,
+    title: "Solo Baseball Hurts",
+    date: "2026-06-14",
+    alt: "More than crushing solitude, a 5 oz baseball to face really hurts",
+    image: "comics/008-solo-baseball-hurts.png"
+  },
+  {
+    id: 7,
+    title: "General Hate of School",
+    date: "2026-06-13",
+    alt: "As opposed to all those specific reason like no guava mango smoothies",
+    image: "comics/007-general-hate-of-school.png"
+  }, 
+  {
     id: 6,
-    title: "Mirror Mirror on the Wall",
+    title: "Mirror Mirror on A Wall",
     date: "2026-06-12",
-    alt: "Sadly this isn't Snow White, a Mirror of Matsuyama, Lady of Shalott and Bloody Mary ",
-    image: "comics/006-mirror-mirror-on-the-wall.png"
+    alt: "Sadly this isn't Snow White, a Mirror of Matsuyama, Lady of Shalott and Bloody Mary",
+    image: "comics/006-mirror-mirror-on-a-wall.png"
   },
   {
     id: 5,
