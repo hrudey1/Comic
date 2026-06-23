@@ -20,10 +20,10 @@ const COMICS = [
   },
   {
     id: 14,
-    title: "Trials of Togetherness",
+    title: "The Trials of Togetherness",
     date: "2026-06-20",
     alt: "This is how early humans befriended wolves",
-    image: "comics/014-trials-of-togetherness.png"
+    image: "comics/014-the-trials-of-togetherness.png"
   },
   {
     id: 13,
@@ -41,10 +41,10 @@ const COMICS = [
   },
   {
     id: 11,
-    title: "Lamer than a Serial Killer",
+    title: "Lamer than Serial Killers",
     date: "2026-06-17",
     alt: "The documentary stabs a little too close to home",
-    image: "comics/011-lamer-than-a-serial-killer.png"
+    image: "comics/011-lamer-than-serial-killers.png"
   },
   {
     id: 10,
