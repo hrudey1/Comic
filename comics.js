@@ -13,6 +13,39 @@
 
 const COMICS = [
   {
+    id: 15,
+    title: "Answer to All Questions",
+    date: "2026-06-21",
+    alt: "Fun fact, Woof is a popular funk rock band",
+    image: "comics/015-answer-to-all-questions.png"
+  },
+  {
+    id: 14,
+    title: "Trials of Togetherness",
+    date: "2026-06-20",
+    alt: "This is how early humans befriended wolves",
+    image: "comics/014-trials-of-togetherness.png"
+  },
+  {
+    id: 13,
+    title: "The Unemployment Bush",
+    date: "2026-06-19",
+    alt: "Three hours is a short time to wait for a friend",
+    image: "comics/013-the-unemployment-bush.png"
+  {
+    id: 12,
+    title: "Happiness in a Box",
+    date: "2026-06-18",
+    alt: "A paw-fectly great dog abandoned",
+    image: "comics/012-happiness-in-a-box.png"
+  },
+  {
+    id: 11,
+    title: "Lamer than a Serial Killer",
+    date: "2026-06-17",
+    alt: "The documentary stabs a little too close to home",
+    image: "comics/011-lamer-than-a-serial-killer.png"
+  {
     id: 10,
     title: "Trees a Crowd",
     date: "2026-06-16",
