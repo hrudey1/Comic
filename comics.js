@@ -10,7 +10,6 @@
 //    alt     — flavor text / caption (shown on hover, like xkcd)
 //    image   — filename of your PNG inside the /comics/ folder
 // ============================================================
-
 const COMICS = [
   {
     id: 15,
@@ -32,6 +31,7 @@ const COMICS = [
     date: "2026-06-19",
     alt: "Three hours is a short time to wait for a friend",
     image: "comics/013-the-unemployment-bush.png"
+  },
   {
     id: 12,
     title: "Happiness in a Box",
@@ -45,6 +45,7 @@ const COMICS = [
     date: "2026-06-17",
     alt: "The documentary stabs a little too close to home",
     image: "comics/011-lamer-than-a-serial-killer.png"
+  },
   {
     id: 10,
     title: "Trees a Crowd",
@@ -72,7 +73,7 @@ const COMICS = [
     date: "2026-06-13",
     alt: "As opposed to all those specific reason like no guava mango smoothies",
     image: "comics/007-general-hate-of-school.png"
-  }, 
+  },
   {
     id: 6,
     title: "Mirror Mirror on A Wall",
