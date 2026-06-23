@@ -13,10 +13,10 @@
 const COMICS = [
   {
     id: 15,
-    title: "Answer to All Questions",
+    title: "Answer to All Asks",
     date: "2026-06-21",
     alt: "Fun fact, Woof is a popular funk rock band",
-    image: "comics/015-answer-to-all-questions.png"
+    image: "comics/015-answer-to-all-asks.png"
   },
   {
     id: 14,
