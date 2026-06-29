@@ -12,6 +12,20 @@
 // ============================================================
 const COMICS = [
   {
+    id: 21,
+    title: "Reflections of My Dog",
+    date: "2026-06-27",
+    alt: "Objects in mirror maybe more charming than they appear",
+    image: "comics/021-reflections-of-my-dog.png"
+  }, 
+  {
+    id: 20,
+    title: "The Furst Talking Dog Ever",
+    date: "2026-06-26",
+    alt: "A man of few words, a dog of many",
+    image: "comics/020-the-furst-talking-dog-ever.png"
+  }, 
+  {
     id: 19,
     title: "Pawsible Prediction Powers",
     date: "2026-06-25",
