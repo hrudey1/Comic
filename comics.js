@@ -12,6 +12,34 @@
 // ============================================================
 const COMICS = [
   {
+    id: 19,
+    title: "Pawsible Prediction Powers",
+    date: "2026-06-25",
+    alt: "What kind of dog is can win the lottery? A Golden Retriever",
+    image: "comics/019-pawsible-prediction-powers.png"
+  }, 
+  {
+    id: 18,
+    title: "Faint Fireflies Fly Faithfully Forenight",
+    date: "2026-06-24",
+    alt: "How many fireflies does it take to replace the moon?",
+    image: "comics/018-faint-fireflies-fly-faithfully-forenight.png"
+  }, 
+  {
+    id: 17,
+    title: "Stick to the Plan",
+    date: "2026-06-23",
+    alt: "Like sticks on a tree, we all grow in different directions",
+    image: "comics/017-stick-to-the-plan.png"
+  }, 
+  {
+    id: 16,
+    title: "Beginning of the Cookie War",
+    date: "2026-06-22",
+    alt: "If you give a dog a cookie by Byron Verona",
+    image: "comics/016-beginning-of-the-cookie-war.png"
+  }, 
+  {
     id: 15,
     title: "Answer to All Asks",
     date: "2026-06-21",
