@@ -27,17 +27,17 @@ const COMICS = [
   },   
   {
     id: 27,
-    title: "The Photobombing Dog",
+    title: "A Photobombing Dog",
     date: "2026-07-03",
     alt: "Dogs are scientifically proven to improve 99% of pictures",
-    image: "comics/027-the-photobombing-dog.png"
+    image: "comics/027-a-photobombing-dog.png"
   }, 
   {
     id: 26,
     title: "A True Slice Serve",
     date: "2026-07-02",
     alt: "Even Federer struggles to do a true slice serve",
-    image: "comics/026-a-true-slice-serve.png"
+    image: "comics/026-true-slice-serve.png"
   }, 
   {
     id: 25,
