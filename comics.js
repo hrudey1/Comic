@@ -12,6 +12,34 @@
 // ============================================================
 const COMICS = [
   {
+    id: 25,
+    title: "Thank God It's Wednesday",
+    date: "2026-07-01",
+    alt: "Tuesdays are more for angsty sonnets",
+    image: "comics/025-thank-god-it's-wednesday.png"
+  }, 
+  {
+    id: 24,
+    title: "The God of Wind",
+    date: "2026-06-30",
+    alt: "Objects in mirror maybe more charming than they appear",
+    image: "comics/024-the-god-of-wind.png"
+  }, 
+  {
+    id: 23,
+    title: "Opposites Attract Cookies Repel Dogs",
+    date: "2026-06-29",
+    alt: "Well magnets and also rampant anti-intellectualism, but also magnets",
+    image: "comics/023-opposites-attract-cookies-repel-dogs.png"
+  }, 
+  {
+    id: 22,
+    title: "Ducks Demonstrate Discerning Dichotomies",
+    date: "2026-06-28",
+    alt: "And don't get ducks started on sourdough bread",
+    image: "comics/022-ducks-demonstrate-discerning-dichotomies.png"
+  }, 
+  {
     id: 21,
     title: "Reflections of My Dog",
     date: "2026-06-27",
