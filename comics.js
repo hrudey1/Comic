@@ -12,6 +12,34 @@
 // ============================================================
 const COMICS = [
   {
+    id: 29,
+    title: "Don't Take Snowmen For Granite",
+    date: "2026-07-05",
+    alt: "And they said you could make snowmen in July heat",
+    image: "comics/029-don't-take-snowmen-for-granite.png"
+  },
+  {
+    id: 28,
+    title: "Lavender Scented Arson",
+    date: "2026-07-04",
+    alt: "A true pioneer in the world of aromatherapy",
+    image: "comics/028-lavender-scented-arson.png"
+  },   
+  {
+    id: 27,
+    title: "The Photobombing Dog",
+    date: "2026-07-03",
+    alt: "Dogs are scientifically proven to improve 99% of pictures",
+    image: "comics/027-the-photobombing-dog.png"
+  }, 
+  {
+    id: 26,
+    title: "A True Slice Serve",
+    date: "2026-07-02",
+    alt: "Even Federer struggles to do a true slice serve",
+    image: "comics/026-a-true-slice-serve.png"
+  }, 
+  {
     id: 25,
     title: "Thank God It's Wednesday",
     date: "2026-07-01",
@@ -22,7 +50,7 @@ const COMICS = [
     id: 24,
     title: "The God of Wind",
     date: "2026-06-30",
-    alt: "Objects in mirror maybe more charming than they appear",
+    alt: "Boreas, Zephryus, Notus, and Eurus all follow proper nutrition",
     image: "comics/024-the-god-of-wind.png"
   }, 
   {
