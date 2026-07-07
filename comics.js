@@ -34,7 +34,7 @@ const COMICS = [
   }, 
   {
     id: 26,
-    title: "A True Slice Serve",
+    title: "True Slice Serve",
     date: "2026-07-02",
     alt: "Even Federer struggles to do a true slice serve",
     image: "comics/026-true-slice-serve.png"
