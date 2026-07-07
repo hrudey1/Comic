@@ -15,7 +15,7 @@ const COMICS = [
     id: 29,
     title: "Don't Take Snowmen For Granite",
     date: "2026-07-05",
-    alt: "And they said you could make snowmen in July heat",
+    alt: "And they said you could make snowmen in July heat, guess they don't listen to rock n roll",
     image: "comics/029-don't-take-snowmen-for-granite.png"
   },
   {
