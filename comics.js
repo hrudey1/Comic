@@ -29,7 +29,7 @@ const COMICS = [
     id: 32,
     title: "The Infamous Wallfish",
     date: "2026-07-08",
-    alt: "It would be easier to find the infamous Smallfoot and Lock Key Monster",
+    alt: "It would be easier to find the infamous Smallfoot and Lock Key Monster, especially with a stick, string and a paper clip with no bait",
     image: "comics/032-the-infamous-wallfish.png"
   }, 
   {
