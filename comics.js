@@ -12,6 +12,41 @@
 // ============================================================
 const COMICS = [
   {
+    id: 34,
+    title: "Life Moves At A Snail's Pace",
+    date: "2026-07-10",
+    alt: "Insults move pretty fast. If you don't stop and look around once in a while you could miss it-Ferris Bueller",
+    image: "comics/034-life-moves-at-a-snail's-pace.png"
+  },
+  {
+    id: 33,
+    title: "Light Limerick for Lepidopterists",
+    date: "2026-07-09",
+    alt: "Sadly, Mrs. Butterfly it was not Wednesday ",
+    image: "comics/033-light-limerick-for-lepidopterists.png"
+  },
+  {
+    id: 32,
+    title: "The Infamous Wallfish",
+    date: "2026-07-08",
+    alt: "It would be easier to find the infamous Smallfoot and Lock Key Monster",
+    image: "comics/032-the-infamous-wallfish.png"
+  }, 
+  {
+    id: 31,
+    title: "No Sleep For The Wicked",
+    date: "2026-07-07",
+    alt: "I think George Costanza would make a good teacher",
+    image: "comics/031-no-sleep-for-the-wicked.png"
+  },
+  {
+    id: 30,
+    title: "Gauss The Artwork ",
+    date: "2026-07-06",
+    alt: "Paint by numbers was inspired by Da Vinci's fresco section numbering technique",
+    image: "comics/030-gauss-the-artwork.png"
+  },
+  {
     id: 29,
     title: "Don't Take Snowmen For Granite",
     date: "2026-07-05",
