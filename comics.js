@@ -12,6 +12,34 @@
 // ============================================================
 const COMICS = [
   {
+    id: 38,
+    title: "Shock and Doughnial",
+    date: "2026-07-14",
+    alt: "p",
+    image: "comics/038-shock-and-doughnial.png"
+  },
+  {
+    id: 37,
+    title: "Daydreaming vs Knightdreaming",
+    date: "2026-07-13",
+    alt: "p",
+    image: "comics/037-daydreaming-vs-knightdreaming.png"
+  },
+  {
+    id: 36,
+    title: "Four Leaf Cardboard",
+    date: "2026-07-12",
+    alt: "p",
+    image: "comics/036-four-leaf-cardboard.png"
+  },
+  {
+    id: 35,
+    title: "Newton's First Law",
+    date: "2026-07-11",
+    alt: "p",
+    image: "comics/035-newton's-first-law.png"
+  },
+  {
     id: 34,
     title: "Life Moves At A Snail's Pace",
     date: "2026-07-10",
