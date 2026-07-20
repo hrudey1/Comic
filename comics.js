@@ -23,7 +23,7 @@ const COMICS = [
     title: "Burnt and Frozen Cooking",
     date: "2026-07-18",
     alt: "p",
-    image: "comics/042-burnt-and-frozen-cooking-.png"
+    image: "comics/042-burnt-and-frozen-cooking.png"
   },
   {
     id: 41,
