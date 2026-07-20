@@ -12,6 +12,41 @@
 // ============================================================
 const COMICS = [
   {
+    id: 43,
+    title: "Wish Upon A Shooting Star",
+    date: "2026-07-19",
+    alt: "p",
+    image: "comics/043=wish-upon-a-shooting-star.png"
+  },
+  {
+    id: 42,
+    title: "Burnt and Frozen Cooking",
+    date: "2026-07-18",
+    alt: "p",
+    image: "comics/042-burnt-and-frozen-cooking-.png"
+  },
+  {
+    id: 41,
+    title: "The Wizard Dog",
+    date: "2026-07-17",
+    alt: "p",
+    image: "comics/041-the-wizard-dog.png"
+  },
+  {
+    id: 40,
+    title: "Boredception",
+    date: "2026-07-16",
+    alt: "p",
+    image: "comics/040-boredception.png"
+  },
+  {
+    id: 39,
+    title: "Butt Paper Already Exists",
+    date: "2026-07-15",
+    alt: "p",
+    image: "comics/039-butt-paper-already-exists.png"
+  },
+  {
     id: 38,
     title: "Shock and Doughnial",
     date: "2026-07-14",
