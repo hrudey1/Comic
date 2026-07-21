@@ -15,63 +15,63 @@ const COMICS = [
     id: 43,
     title: "Wish Upon A Shooting Star",
     date: "2026-07-19",
-    alt: "p",
+    alt: "Oh shooting star, I wish more people would read the flavor text",
     image: "comics/043=wish-upon-a-shooting-star.png"
   },
   {
     id: 42,
     title: "Burnt and Frozen Cooking",
     date: "2026-07-18",
-    alt: "p",
+    alt: "Physicists call it a quantum superposition of thermal gradients, Mom calls it Tuesday night lasagna",
     image: "comics/042-burnt-and-frozen-cooking.png"
   },
   {
     id: 41,
     title: "The Wizard Dog",
     date: "2026-07-17",
-    alt: "p",
+    alt: "This is why there ano wizard dogs in Harry Potter, Voldemort would stand no chance",
     image: "comics/041-the-wizard-dog.png"
   },
   {
     id: 40,
     title: "Boredception",
     date: "2026-07-16",
-    alt: "p",
+    alt: "Christopher Nolan and Satoshi Kon, never heard of them",
     image: "comics/040-boredception.png"
   },
   {
     id: 39,
     title: "Butt Paper Already Exists",
     date: "2026-07-15",
-    alt: "p",
+    alt: "Invention is 99% perspiration and 1% inspiration my butt, not falling for that again",
     image: "comics/039-butt-paper-already-exists.png"
   },
   {
     id: 38,
     title: "Shock and Doughnial",
     date: "2026-07-14",
-    alt: "p",
+    alt: "Grass is always greener, the cookie is always sweeter",
     image: "comics/038-shock-and-doughnial.png"
   },
   {
     id: 37,
     title: "Daydreaming vs Knightdreaming",
     date: "2026-07-13",
-    alt: "p",
+    alt: "Better a daydream than a knightmare",
     image: "comics/037-daydreaming-vs-knightdreaming.png"
   },
   {
     id: 36,
     title: "Four Leaf Cardboard",
     date: "2026-07-12",
-    alt: "p",
+    alt: "You're only as lucky as you are delusional, just ask anyone who has moved to Los Angeles",
     image: "comics/036-four-leaf-cardboard.png"
   },
   {
     id: 35,
     title: "Newton's First Law",
     date: "2026-07-11",
-    alt: "p",
+    alt: "Good thing it was not Newton's third law or that tree would be in real trouble",
     image: "comics/035-newton's-first-law.png"
   },
   {
@@ -85,7 +85,7 @@ const COMICS = [
     id: 33,
     title: "Light Limerick for Lepidopterists",
     date: "2026-07-09",
-    alt: "Sadly, Mrs. Butterfly it was not Wednesday ",
+    alt: "Sadly, Mrs. Butterfly it was not Wednesday",
     image: "comics/033-light-limerick-for-lepidopterists.png"
   },
   {
