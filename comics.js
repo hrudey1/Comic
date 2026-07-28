@@ -12,6 +12,34 @@
 // ============================================================
 const COMICS = [
   {
+    id: 47,
+    title: "Sword of Just Found It",
+    date: "2026-07-23",
+    alt: "Mom won't ask because she collects swords as well",
+    image: "comics/047-sword-of-just-found-it.png"
+  },   
+  {
+    id: 46,
+    title: "Sword in the Trashpile",
+    date: "2026-07-22",
+    alt: "Only the chosen dumpster diver can pull the sword from the trash pile",
+    image: "comics/046-sword-in-the-trashpile.png"
+  },   
+  {
+    id: 45,
+    title: "Idea Guy Complaint Master",
+    date: "2026-07-21",
+    alt: "I guess that's why there are so many unnecessary podcasts, not to complain",
+    image: "comics/045-idea-guy-complaint-mastery.png"
+  }, 
+  {
+    id: 44,
+    title: "The Masks of Diversion",
+    date: "2026-07-20",
+    alt: "Maybe if this was an early 90's cartoon",
+    image: "comics/044-the-masks-of-diversion.png"
+  },  
+  {
     id: 43,
     title: "Wish Upon A Shooting Star",
     date: "2026-07-19",
