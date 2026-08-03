@@ -57,7 +57,7 @@ const COMICS = [
     id: 41,
     title: "The Wizard Dog",
     date: "2026-07-17",
-    alt: "This is why there ano wizard dogs in Harry Potter, Voldemort would stand no chance",
+    alt: "This is why there are no wizard dogs in Harry Potter, Voldemort would stand no chance",
     image: "comics/041-the-wizard-dog.png"
   },
   {
