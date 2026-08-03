@@ -12,6 +12,34 @@
 // ============================================================
 const COMICS = [
   {
+    id: 51,
+    title: "Blurring of A Great Idea",
+    date: "2026-07-27",
+    alt: "p",
+    image: "comics/051-blurring-of-a-great-idea.png"
+  }, 
+  {
+    id: 50,
+    title: "The Mutt Hatter",
+    date: "2026-07-26",
+    alt: "p",
+    image: "comics/050-the-mutt-hatter.png"
+  }, 
+  {
+    id: 49,
+    title: "Misfortune Cookies",
+    date: "2026-07-25",
+    alt: "p",
+    image: "comics/049-misfortune-cookies.png"
+  }, 
+  {
+    id: 48,
+    title: "Howl-ly Jolly Friendship",
+    date: "2026-07-24",
+    alt: "p",
+    image: "comics/048-howl-ly-jolly-friendship.png"
+  }, 
+  {
     id: 47,
     title: "Sword of Just Found It",
     date: "2026-07-23",
