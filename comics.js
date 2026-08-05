@@ -11,6 +11,34 @@
 //    image   — filename of your PNG inside the /comics/ folder
 // ============================================================
 const COMICS = [
+   {
+    id: 55,
+    title: "Kung Foo-t",
+    date: "2026-07-31",
+    alt: "p",
+    image: "comics/055-kung-foo-t.png"
+  },   
+  {
+    id: 54,
+    title: "Explaing How We Got Dumber",
+    date: "2026-07-30",
+    alt: "p",
+    image: "comics/054-explaining-how-we-got-dumber.png"
+  },   
+  {
+    id: 53,
+    title: "Beginner Meditation",
+    date: "2026-07-29",
+    alt: "p",
+    image: "comics/053-beginner-meditation.png"
+  }, 
+  {
+    id: 52,
+    title: "Self Help from Wizard Dog ",
+    date: "2026-07-28",
+    alt: "p",
+    image: "comics/052-self-help-from-wizard-dog.png"
+  }, 
   {
     id: 51,
     title: "Blurring of A Great Idea",
