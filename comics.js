@@ -13,10 +13,10 @@
 const COMICS = [
    {
     id: 59,
-    title: "Cruelty of Evolution",
+    title: "Cruelty and Unusual Evolution",
     date: "2026-08-04",
     alt: "p",
-    image: "comics/059-cruelty-of-evolution.png"
+    image: "comics/059-cruelty-and-unusual-evolution.png"
    },  
    {
     id: 58,
