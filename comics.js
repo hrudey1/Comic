@@ -12,6 +12,34 @@
 // ============================================================
 const COMICS = [
    {
+    id: 59,
+    title: "Cruelty of Evolution",
+    date: "2026-08-04",
+    alt: "p",
+    image: "comics/059-cruelty-of-evolution.png"
+   },  
+   {
+    id: 58,
+    title: "Foot Gloves",
+    date: "2026-08-03",
+    alt: "p",
+    image: "comics/058-foot-gloves.png"
+   },   
+   {
+    id: 57,
+    title: "Re-Barkable Stargazing",
+    date: "2026-08-02",
+    alt: "p",
+    image: "comics/057-re-barkable-stargazing.png"
+   },    
+   {
+    id: 56,
+    title: "Patience and Stupidity Are Virtues",
+    date: "2026-08-01",
+    alt: "p",
+    image: "comics/056-patience-and-stupidity-are-virtues.png"
+   },    
+   {
     id: 55,
     title: "Kung Foo-t",
     date: "2026-07-31",
