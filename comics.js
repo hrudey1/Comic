@@ -11,6 +11,34 @@
 //    image   — filename of your PNG inside the /comics/ folder
 // ============================================================
 const COMICS = [
+    {
+    id: 63,
+    title: "Pigskin Tennis",
+    date: "2026-08-08",
+    alt: "p",
+    image: "comics/063-pigskin-tennis.png"
+   },  
+   {
+    id: 62,
+    title: "Eggs-pert Vandalism",
+    date: "2026-08-07",
+    alt: "p",
+    image: "comics/062-eggs-pert-vandalism.png"
+   },  
+   {
+    id: 61,
+    title: "Fangs for The Memories",
+    date: "2026-08-06",
+    alt: "p",
+    image: "comics/061-fangs-for-the-memories.png"
+   },  
+   {
+    id: 60,
+    title: "Suffer for Your Art",
+    date: "2026-08-05",
+    alt: "p",
+    image: "comics/060-suffer-for-your-art.png"
+   },  
    {
     id: 59,
     title: "Cruelty and Unusual Evolution",
