@@ -15,112 +15,112 @@ const COMICS = [
     id: 63,
     title: "Pigskin Tennis",
     date: "2026-08-13",
-    alt: "p",
+    alt: "No raquets to smash",
     image: "comics/063-pigskin-tennis.png"
    },  
    {
     id: 62,
     title: "Eggs-pert Vandalism",
     date: "2026-08-12",
-    alt: "p",
+    alt: "Deviled eggs are sinfully delicous",
     image: "comics/062-eggs-pert-vandalism.png"
    },  
    {
     id: 61,
     title: "Fangs for The Memories",
     date: "2026-08-11",
-    alt: "p",
+    alt: "Nature's pest control",
     image: "comics/061-fangs-for-the-memories.png"
    },  
    {
     id: 60,
     title: "Suffer for Your Art",
     date: "2026-08-10",
-    alt: "p",
+    alt: "Squidward would be proud",
     image: "comics/060-suffer-for-your-art.png"
    },  
    {
     id: 59,
     title: "Cruelty and Unusual Evolution",
     date: "2026-08-09",
-    alt: "p",
+    alt: "Still better than the pugs",
     image: "comics/059-cruelty-and-unusual-evolution.png"
    },  
    {
     id: 58,
     title: "Foot Gloves",
     date: "2026-08-08",
-    alt: "p",
+    alt: "Sock Face McGee gets no respect",
     image: "comics/058-foot-gloves.png"
    },   
    {
     id: 57,
     title: "Re-Barkable Stargazing",
     date: "2026-08-07",
-    alt: "p",
+    alt: "Stargazing is always better with a friend, man's best friend",
     image: "comics/057-re-barkable-stargazing.png"
    },    
    {
     id: 56,
     title: "Patience and Stupidity Are Virtues",
     date: "2026-08-06",
-    alt: "p",
+    alt: "Adopt the pace of the wallfish, their secret is patience",
     image: "comics/056-patience-and-stupidity-are-virtues.png"
    },    
    {
     id: 55,
     title: "Kung Foo-t",
     date: "2026-08-05",
-    alt: "p",
+    alt: "He just watched Enter the Dragon",
     image: "comics/055-kung-foo-t.png"
   },   
   {
     id: 54,
     title: "Explaing How We Got Dumber",
     date: "2026-08-04",
-    alt: "p",
+    alt: "Certainly would explain a lot of people's taste in movies",
     image: "comics/054-explaining-how-we-got-dumber.png"
   },   
   {
     id: 53,
     title: "Beginner Meditation",
     date: "2026-08-03",
-    alt: "p",
+    alt: "So he's already got the first step down, many struggle with emptying the mind",
     image: "comics/053-beginner-meditation.png"
   }, 
   {
     id: 52,
     title: "Self Help from Wizard Dog ",
     date: "2026-08-02",
-    alt: "p",
+    alt: "Buy my book today, 7 Habits of Highly Effective Wizard Dogs",
     image: "comics/052-self-help-from-wizard-dog.png"
   }, 
   {
     id: 51,
     title: "Blurring of A Great Idea",
     date: "2026-08-01",
-    alt: "p",
+    alt: "Much like all the great ideas lost in the shower",
     image: "comics/051-blurring-of-a-great-idea.png"
   }, 
   {
     id: 50,
     title: "The Mutt Hatter",
     date: "2026-07-31",
-    alt: "p",
+    alt: "Personally I would narrow down to the fez",
     image: "comics/050-the-mutt-hatter.png"
   }, 
   {
     id: 49,
     title: "Misfortune Cookies",
     date: "2026-07-30",
-    alt: "p",
+    alt: "You get these at the beginning of the meal instead",
     image: "comics/049-misfortune-cookies.png"
   }, 
   {
     id: 48,
     title: "Howl-ly Jolly Friendship",
     date: "2026-07-29",
-    alt: "p",
+    alt: "If only wolves could see the dog shows nowadays",
     image: "comics/048-howl-ly-jolly-friendship.png"
   }, 
   {
