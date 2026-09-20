@@ -172,7 +172,7 @@ const COMICS = [
     alt: "This is why there are no wizard dogs in Harry Potter, Voldemort would stand no chance",
     image: "comics/041-the-wizard-dog.png"
   },
-  {u
+  {
     id: 40,
     title: "Boredception",
     date: "2026-08-23",
