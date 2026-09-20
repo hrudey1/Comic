@@ -11,7 +11,7 @@
 //    image   — filename of your PNG inside the /comics/ folder
 // ============================================================
 const COMICS = [
-    {
+   {
     id: 63,
     title: "Pigskin Tennis",
     date: "2026-09-15",
