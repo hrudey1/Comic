@@ -11,6 +11,27 @@
 //    image   — filename of your PNG inside the /comics/ folder
 // ============================================================
 const COMICS = [
+    {
+    id: 66,
+    title: "Always A Bigger Fish",
+    date: "2026-10-04",
+    alt: "Flowey is always more interesting",
+    image: "comics/066-always-a-bigger-fish.png"
+   }, 
+   {
+    id: 65,
+    title: "Distinguished Young Elf",
+    date: "2026-10-03",
+    alt: "A disguise for a future occasion",
+    image: "comics/065-distinguished-young-elf.png"
+   }, 
+   {
+    id: 64,
+    title: "Canine on the Mind",
+    date: "2026-10-02",
+    alt: "Dog in the home is worth two in the bush",
+    image: "comics/064-canine-on-the-mind.png"
+   },  
    {
     id: 63,
     title: "Pigskin Tennis",
